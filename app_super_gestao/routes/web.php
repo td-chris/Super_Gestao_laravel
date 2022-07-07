@@ -36,6 +36,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [\App\Http\Controllers\PrincipalController::class,'principal'])->name('site.index');
 Route::get('/sobre-nos', [\App\Http\Controllers\SobreNosController::class,'sobreNos'])->name('site.sobrenos');
 Route::get('/contatos', [\App\Http\Controllers\ContatosController::class,'contatos'])->name('site.contatos');
+Route::post('/contatos', [\App\Http\Controllers\ContatosController::class,'contatos'])->name('site.contatos');
 Route::get('/login', function() { return "login"; } )->name('site.login');
 
 // agrupamento de rotas
